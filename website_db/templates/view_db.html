@@ -1,0 +1,39 @@
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+  </style>
+  {% if data %}
+<table>
+  <tr>
+    <th>Index</th>
+    <th>First Name</th>
+    <th>Username</th>
+    <th>Password</th>
+  </tr>
+  
+  {% for item in data %}
+  <tr>
+    <td>{{ loop.index }}</td>
+    {% for dat in item %}
+      <td>{{dat}}</td>
+    {% endfor %}
+    
+  </tr>
+  {% endfor %}
+  
+</table>
+{% else %}
+  <h1> Failed to fetch data from DB!</h1>
+{% endif %}
+
+
+
+
+  

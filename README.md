@@ -42,7 +42,6 @@ Arguments:
 
 Optional arguments:
 - `port` : port of remote machine
-- ``
 - `db_username`: the username of the remote DB.
 - `db_password`: the password of the remote DB.
 - `db_type`: type of the DB, EDRaser supports `mysql`, `sqlite`. (# Note that for sqlite, no username\password is needed)
